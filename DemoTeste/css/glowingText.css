@@ -1,0 +1,42 @@
+/* Define the animation */
+@keyframes glow {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    25% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    75% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+  }
+  
+  /* Define a separate animation for color change */
+  @keyframes colorChange {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }
+  
+  /* Apply the animations to the control element with the class "classDemo" */
+  .classDemo {
+    animation: glow 2s infinite, colorChange 5s infinite; /* 2s duration for glow, 5s duration for color change, both in an infinite loop */
+  }
+  
